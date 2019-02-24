@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/carousel.js"></script>
+    <style>
+         *{
+             padding: 0;
+             margin: 0;
+         }
+
+        .banner{
+            position: relative;
+            height: 620px;
+            width:1350px;
+        }
+        .post,#post {
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        .logo-nav{
+            position: absolute;
+            height: 85px;
+            width: 1140px;
+            top: 60px;
+            left: 100px;
+        }
+        .logo{
+            float: left;
+            z-index: 2;
+
+        }
+        .logo h1 a{
+
+            font-size: 2em;
+            color:#FFFFFF;
+            z-index: 2;
+            text-decoration: none;
+
+        }
+        .logo h1 a span{
+            text-transform: uppercase;
+            font-size:.2em;
+            margin: 0 0 0 2em;
+            letter-spacing: 4px;
+        }
+        .nav{
+            position: absolute;
+            float: right;
+            z-index: 2;
+            margin-top: 25px;
+            height: 30px;
+            width: 600px;
+            left: 450px;
+            top: 10px;
+
+        }
+        .nav li{
+            float: left;
+            list-style: none;
+            display: block;
+
+
+
+        }
+         .nav li a{
+             text-decoration: none;
+             color: #FFFFFF;
+             letter-spacing: 3px;
+             margin: 5px 1.5em;
+             text-transform: uppercase;
+             display: inline-block;
+             font-weight: bold;
+         }
+         .nav li a:hover{
+             color: red;
+         }
+         .nav li::after{
+             position: absolute;
+             content: "";
+             height: 12px;
+             width: 2px;
+             background:  #FFFFFF;
+             z-index: 2;
+             top: 10px;
+         }
+         .carousel{
+             position: absolute;
+             float: left;
+             width: 900px;
+             height: 250px;
+             overflow: hidden;
+             text-align: center;
+             top: 280px;
+             left: 210px;
+             z-index: 2;
+         }
+        .list{
+            width: 2700px;
+            height: 200px;
+            float: left;
+            position: absolute;
+        }
+        .list h1 p{
+            color: black;
+            font-size: 40px;
+            font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+            font-style: italic;
+            float: left;
+            width: 900px;
+            height: 200px;
+            color: #FFFFFF;
+        }
+        #buttons{
+            position: absolute;
+            top: 550px;
+            left: 600px;
+        }
+        #buttons span{
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            z-index: 2;
+            border: 2px solid #fff;
+            margin-right: 10px;
+            float: left;
+            cursor: pointer;
+        }
+        #buttons .on {
+            background: red;
+        }
+    </style>
+</head>
+<body>
+<!--banner-->
+<div class="content">
+  <div class="banner">
+      <div class="logo-nav">
+        <div class="logo">
+           <h1><a href="#">YuHang<span>blog</span></a> </h1>
+        </div>
+           <ul class="nav">
+               <li><a href="#">home</a></li>
+               <li><a href="#">pages</a> </li>
+               <li><a href="#">pet</a></li>
+               <li><a href="#">about</a></li>
+               <li><a href="#">contact</a></li>
+           </ul>
+
+      </div>
+      <div class="post">
+          <img id="post" src="sholck.jpg">
+      </div>
+      <div class="carousel">
+          <div class="list" id="list" style="left: 0px;">
+              <h1><p>The problem of your past is your business,</br>the problem of your future is my privilege.</br>你的过去我不愿过问，那是你的事情。</br>你的未来我希望参与，这是我的荣幸。</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;------华生《神探夏洛克》</p></h1>
+              <h1><p>To the very best of times,John.</br>致那些最好的时光，约翰。</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-------夏洛克</p></h1>
+              <h1><p>The higher I got,the more amazed</br> I was by the view.</br>我爬得越高，越为眼前的风景所惊叹。</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---------《怦然心动》</p></h1>
+          </div>
+      </div>
+      <div id="buttons">
+          <span index="1" class="on"></span>
+          <span index="2"></span>
+          <span index="3"></span>
+      </div>
+  </div>
+</div>
+</body>
+</html>
